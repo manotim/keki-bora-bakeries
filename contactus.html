@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keki Bora Bakery - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Keki Bora Bakery</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="orderonline.html">Order Online</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" action="submit_form.php" method="post">  <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="form-response"></div>  </div>
+                <div class="contact-info">
+                    <h3>Keki Bora Bakery</h3>
+                    <p>KSTVET Hotel, [Address]</p>
+                    <p>Phone: [Phone Number]</p>
+                    <p>Email: [Email Address]</p>
+                    <div id="map">
+                      <iframe src="YOUR_GOOGLE_MAPS_EMBED_URL" width="600" height="450" frameborder="0" style="border:0" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Keki Bora Bakery</p>
+    </footer>
+
+</body>
+</html>

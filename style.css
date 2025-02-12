@@ -1,0 +1,341 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f6f1; /* Light, warm background */
+    color: #333; /* Dark text for contrast */
+}
+
+header {
+    background-color: #d8b4a0; /* A warm, inviting brown */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space logo and nav items */
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: "Sixtyfour Convergence", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Dark link color */
+    font-weight: 500;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #7a5740; /* Darker brown on hover */
+}
+
+#hero {
+    background-color: #ff5b03bd; /* A warm, inviting brown */
+    padding: 50px 0; /* Reduced padding */
+    height: 39rem;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    max-width: 960px; /* Set a maximum width for the hero section */
+    margin: 0 auto; /* Center the hero content */
+    padding: 0 20px; /* Add some side padding */
+}
+
+.hero-text {
+    width: 50%; /* Occupy 50% of the hero container */
+    padding-right: 20px; /* Add spacing between text and image */
+    text-align: left; /* Align text to the left */
+}
+
+.hero-text h1 {
+    font-size: 4.5rem; /* Increased font size */
+    font-weight: 700; /* Bold text */
+    /* color: #FFD700; Shiny gold color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    font-family: "Kalnia Glaze", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-variation-settings:"wdth" 100;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 1.6; /* Improve readability */
+    font-weight: 500;
+    font-family: "Pacifico", serif;
+}
+
+.hero-image {
+    width: 50%; /* Occupy 50% of the hero container */
+    text-align: cente; /* Center the image */
+}
+
+
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove border-radius */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.hero-text button {
+    background-color: #f118f1; /* Orange background */
+    color: white;
+    padding: 20px 40px; /* Increased padding for bigger button */
+    border: none;
+    border-radius: 2rem; /* Slightly more rounded corners */
+    font-size: 2rem; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Added a slight shadow */
+}
+
+.hero-text button:hover {
+    background-color: #9e4cb375; /* Darker orange on hover */
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+#featured {
+    padding: 40px 20px; /* Add padding around the featured section */
+    text-align: center; /* Center the section heading */
+}
+
+#featured h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.featured-items {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    padding: 20px;
+}
+
+.item {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in width */
+    text-align: center;
+    background-color: white; /* Add a white background to the items */
+    border-radius: 8px; /* Add rounded corners to the items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.2s; /* Add a transition for the hover effect */
+}
+
+.item:hover {
+    transform: translateY(-5px); /* Move the item up slightly on hover */
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Round the top corners of the image */
+}
+
+.item h3 {
+    margin-top: 10px;
+}
+
+.item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#menu .menu-category {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center; /* Center the content within the category */
+}
+
+#menu h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    background-color: #8B0000; /* Current color as background */
+    color: white; /* Text color white */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    text-align: center;
+    /* Wavy border effect */
+    border-style: solid;
+    border-width: 4px;
+    -webkit-animation: wavy-border 1s linear infinite; /* Chrome/Safari */
+    animation: wavy-border 1s linear infinite; /* Standard syntax */
+    transform: rotate(5deg); /* Rotate the h3 element */
+    padding: 15px 25px; /* Adjust padding for rotation */
+    display: inline-block;
+}
+
+/* Keyframes for wavy border animation */
+@-webkit-keyframes wavy-border {
+    0% {
+        border-color: #8B0000 transparent transparent transparent; /* Initial border colors */
+    }
+    25% {
+        border-color: transparent #8B0000 transparent transparent; /* Shift colors */
+    }
+    50% {
+        border-color: transparent transparent #8B0000 transparent; /* Shift colors */
+    }
+    75% {
+        border-color: transparent transparent transparent #8B0000; /* Shift colors */
+    }
+    100% {
+        border-color: #8B0000 transparent transparent transparent; /* Back to initial colors */
+    }
+}
+
+@keyframes wavy-border {
+    0% {
+        border-color: #8B0000 transparent transparent transparent;
+    }
+    25% {
+        border-color: transparent #8B0000 transparent transparent;
+    }
+    50% {
+        border-color: transparent transparent #8B0000 transparent;
+    }
+    75% {
+        border-color: transparent transparent transparent #8B0000;
+    }
+    100% {
+        border-color: #8B0000 transparent transparent transparent;
+    }
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.menu-item {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Make menu-item a flex container */
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center horizontally */
+}
+
+#menu h3 {
+    margin-bottom: 10px;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.menu-item {
+    width: 250px; /* Adjust as needed for your image and content size */
+    margin: 10px; /* Space between items */
+    border: 1px solid #eee; /* Optional border for items */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional shadow for items */
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: 200px; /* Set your desired height */
+    object-fit: cover; /* Important: Prevents image distortion */
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.menu-item h4 {
+    margin-bottom: 5px;
+}
+
+#menu h2 {
+    margin-left: 20px; /* Add left margin */
+    color: #804848; /* Grey color */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+
+.menu-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+footer {
+    background-color: #d8b4a0; /* Same as header background */
+    padding: 1rem 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav li {
+        margin: 10px 0; /* Add margin between stacked items */
+    }
+
+    .hero-content {
+        flex-direction: column; /* Stack hero content vertically */
+        text-align: center; /* Center text in hero section */
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .item {
+        width: 45%; /* Adjust width as needed */
+    }
+
+    .menu-item {
+        width: 45%; /* Two items per row on smaller screens */
+    }
+}
