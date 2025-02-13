@@ -47,6 +47,27 @@ nav a:hover {
     color: #7a5740; /* Darker brown on hover */
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
 #hero {
     background-color: #ff5b03bd; /* A warm, inviting brown */
     padding: 50px 0; /* Reduced padding */
@@ -142,7 +163,7 @@ nav a:hover {
 .item {
     width: 30%; /* Adjust width as needed */
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border:  1px solid black solid #ddd;
     padding: 10px;
     box-sizing: border-box; /* Include padding in width */
     text-align: center;
@@ -174,7 +195,7 @@ nav a:hover {
 #menu .menu-category {
     margin-bottom: 30px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border:  1px solid black solid #ddd;
     border-radius: 8px;
     text-align: center; /* Center the content within the category */
 }
@@ -229,7 +250,7 @@ nav a:hover {
 .contact-form textarea {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border:  1px solid black solid #ccc;
     border-radius: 5px;
     font-size: 1em;
 }
@@ -266,18 +287,61 @@ nav a:hover {
     text-align: center;
     font-size: 40px;
 }
-.about-main {
-    text-align: start;
-    margin-left: 60px;
+.about-main, .contact-main, .menu-main {
+    align-items: center;
+    margin-left: 100px;
     margin-right: 60px;
-    padding: 30px;
+    background-color: #f0be9d50;
+    /* border: 2px solid #d6cccc;  2px width, solid style, dark gray color */
+    padding: 20px;
+    border-radius: 5px; 
 }
 #about {
-    max-width: 1200px;
+    max-width: 1000px;
     text-align: center;
+    border: 1fr solid #f785038e;
+    margin:10px 250px;
 }
 
+#order {
+    background-color: #f0be9d50;
+    margin:5px 250px;
+    height: 500px;
+}
 
+.order-content {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#order h2 {
+    
+    color: #8B0000;
+    text-align: center;
+    font-size: 40px;
+}
+
+.orderBtn {
+    background-color: #f14b18; /* Orange background */
+    color: white;
+    padding: 15px 35px; /* Increased padding for bigger button */
+    border: none;
+    border-radius: 2rem; /* Slightly more rounded corners */
+    font-size: 1rem; /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Added a slight shadow */
+}
+
+.menu-icon, .close-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
 
 /* Keyframes for wavy border animation */
 @-webkit-keyframes wavy-border {
@@ -325,7 +389,7 @@ nav a:hover {
 .menu-item {
     width: 250px;
     margin: 10px;
-    border: 1px solid #eee;
+    border:  1px solid black solid #eee;
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -348,7 +412,7 @@ nav a:hover {
 .menu-item {
     width: 250px; /* Adjust as needed for your image and content size */
     margin: 10px; /* Space between items */
-    border: 1px solid #eee; /* Optional border for items */
+    border:  1px solid black solid #eee; /* Optional border for items */
     padding: 10px;
     border-radius: 8px;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Optional shadow for items */
@@ -389,6 +453,50 @@ footer {
 
 /* Responsive Design (Example) */
 @media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fd7003be;
+        border-bottom:  1px solid black;
+        color: white;
+        width: 200px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links li a {
+        color: white;
+        border-bottom:  1px solid black;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .close-icon {
+        display: none;
+    }
+
+    .nav-links.active ~ .close-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .menu-icon.active {
+        display: none;
+    }
     nav ul {
         flex-direction: column; /* Stack navigation items vertically */
     }

@@ -13,26 +13,26 @@
     <header>
         <nav>
             <div class="logo">Keki Bora Bakery</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="orderonline.html">Order Online</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="close-icon" onclick="toggleMenu()">×</div>
         </nav>
     </header>
-
     <main>
         <section id="order">
             <h2>Order Online</h2>
             <div class="order-content">
                 <p>Ready to satisfy your sweet cravings?  Ordering online is easy!  Click the button below to start your order.</p>
 
-                    <button>Order Now</button>
-                
+                    <button class="orderBtn" onclick="window.location.href='https://glovoapp.com/ke/'">Order Now</button>
 
-                <p>Or, if you prefer, you can call us at [Phone Number] to place your order.</p>
+                <p>Or, if you prefer, you can call us at <b>📞+254783395764</b> to place your order.</p>
             </div>
         </section>
     </main>
@@ -40,5 +40,6 @@
     <footer>
         <p>&copy; 2023 Keki Bora Bakery</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
