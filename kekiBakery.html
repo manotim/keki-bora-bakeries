@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keki Bora Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Keki Bora Bakery</div>
+            <ul class="nav-links">
+                <li><a href="#homePage">Home</a></li>
+                <li><a href="#menuPage">Menu</a></li>
+                <li><a href="#contactPage">Contact Us</a></li>
+                <li><a href="#aboutPage">About Us</a></li>
+                <li><a href="#orderPage">Order Online</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="close-icon" onclick="toggleMenu()">×</div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Indulge in Sweet Perfection</h1>
+                    <p>Exquisite cakes, pastries, and desserts crafted with passion and love.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/signature-cake.png" alt="Signature cake from Keki Bora Bakery">
+                </div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Our Specialties</h2>
+            <div class="featured-items">
+                <div class="menu-item">
+                    <img src="images/butterscotch_cake.jpeg" alt="Butter Scotch">
+                    <h4>Butter Scotch</h4>
+                    <p>Classic Butter Scotch with buttercream frosting. (Ksh 3000)</p>
+                </div>
+                <div class="menu-item">
+                    <img src="images/vanilla_cupcakes.jpeg" alt="Vanilla Cupcakes">
+                    <h4>Vanilla Cupcakes</h4>
+                    <p>Moist Vanilla cupcakes with various toppings. (Ksh 250 per cupcake)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <main class="menu-main" id="menuPage">
+        <section id="menu">
+            <h2>Our Delicious Menu</h2>
+
+            <div class="menu-category">
+                <h3>Cakes</h3>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <img src="images/chocolate_cake.jpeg" alt="Chocolate Cake">
+                        <h4>Chocolate Cake</h4>
+                        <p>Rich chocolate cake with creamy frosting. (Ksh 2500)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/vanilla_cake.jpeg" alt="Vanilla Cake">
+                        <h4>Vanilla Cake</h4>
+                        <p>Classic vanilla cake with buttercream frosting. (Ksh 2000)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/butterscotch_cake.jpeg" alt="Butter Scotch">
+                        <h4>Butter Scotch</h4>
+                        <p>Classic Butter Scotch with buttercream frosting. (Ksh 3000)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/redvelvet_cake.jpeg" alt="RedVelvet Cake">
+                        <h4>RedVelvet Cake</h4>
+                        <p>Classic RedVelvet cake with buttercream frosting. (Ksh 4000)</p>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="menu-category">
+                <h3>Cupcakes</h3>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <img src="images/chocolate_cupcake.jpeg" alt="Chocolate Cupcakes">
+                        <h4>Chocolate Cupcakes</h4>
+                        <p>Moist chocolate cupcakes with various toppings. (Ksh 250 per cupcake)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/vanilla_cupcakes.jpeg" alt="Vanilla Cupcakes">
+                        <h4>Vanilla Cupcakes</h4>
+                        <p>Moist Vanilla cupcakes with various toppings. (Ksh 250 per cupcake)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/lemon_cupcake.jpeg" alt="Lemon Cupcakes">
+                        <h4>Lemon Cupcakes</h4>
+                        <p>Moist Lemon cupcakes with various toppings. (Ksh 450 per cupcake)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/redvelvet_cupcakes.jpeg" alt="RedVelvet Cupcakes">
+                        <h4>RedVelvet Cupcakes</h4>
+                        <p>Moist RedVelvet cupcakes with various toppings. (Ksh 250 per cupcake)</p>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <div class="menu-category">
+                <h3>Specialty Desserts</h3>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <img src="images/choux.jpeg" alt="Choux">
+                        <h4>Choux</h4>
+                        <p>Flaky and buttery croissant. (Ksh 150)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/puff.jpeg" alt="Puff">
+                        <h4>Puff</h4>
+                        <p>Flaky and buttery croissant. (Ksh 150)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/lemon_pastry.jpeg" alt="Lemon Pastry">
+                        <h4>Lemon Pastry</h4>
+                        <p>Lemon Pastry. (Ksh 210)</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/mille_fuellie.jpeg" alt="Mille Fuellie">
+                        <h4>Mille Fuellie</h4>
+                        <p>Mille Fuellie. (Ksh 350)</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+    </main>
+
+    <main class="about-main" id="aboutPage">
+        <section id="about">
+            <h2>About Keki Bora Bakery</h2>
+            <div class="about-content">
+              <div class="about-image">
+                <img src="images/bakers.jpg" alt="Bakery Founders">
+              </div>
+              <div class="about-text">
+                
+                <p>Keki Bora Bakery was founded in 2021 by the passionate baking duo, Eiden Wanjiku and Adrian Kibet.  Their love for creating delicious and beautiful cakes and pastries inspired them to start this venture within the KSTVET Hotel.  </p>
+                </div>
+              <div class="about-text">
+                <h2>Our Mission</h2>
+                <p>Our mission is to bring joy and sweetness to every occasion with our high-quality ingredients and unique recipes. We strive to provide our customers with an unforgettable experience, from the moment they step into our bakery to the last bite of our delectable treats.</p>
+              </div>
+            </div>
+            <div class="about-store">
+              <img src="images/frontshop.jpg" alt="Bakery Storefront">
+            </div>
+        </section>
+    </main>
+
+
+    <main id="orderPage">
+        <section id="order">
+            <h2>Order Online</h2>
+            <div class="order-content">
+                <p>Ready to satisfy your sweet cravings?  Ordering online is easy!  Click the button below to start your order.</p>
+
+            
+                <a href="https://glovoapp.com/ke/" target="_blank" class="orderBtn">Order Now</a>
+
+                <p>Or, if you prefer, you can call us at <b>📞+254783395764</b> to place your order.</p>
+            </div>
+        </section>
+    </main>
+
+    <main class="contact-main" id="contactPage">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm" action="submit_form.php" method="post">  <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <div id="form-response"></div>  </div>
+                <div class="contact-info">
+                    <h3>Keki Bora Bakery</h3>
+                    <h4>KSTVET Hotel 15204 Nairobi, Kenya</h4>
+                    <p>Phone: <b>+254759411378</b></p>
+                    <p>Email: <b>kekibora@gmail.com</b></p>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.884366548665!2d36.812353074788994!3d-1.239744635576642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17ba112bd817%3A0x43971c8d371d37fb!2sKenya%20Technical%20Trainers%20College%20(KTTC!5e0!3m2!1sen!2ske!4v1739470598401!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container"> 
+          <div class="footer-column">
+            <h3>About Keki Bora</h3>
+            <p>Exquisite cakes, pastries, and desserts crafted with passion and love in Nairobi, Kenya.</p> 
+            <div class="social-icons">
+              <a href="#" target="_blank"><img src="images/facebook-icon-Photoroom.png" alt="Facebook"></a>
+              <a href="#" target="_blank"><img src="images/insta-icon.png" alt="Instagram"></a>
+              <a href="#" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#menuPage">Menu</a></li>
+              <li><a href="#orderPage">Order Online</a></li>
+              <li><a href="#contactPage">Contact Us</a></li>
+              <li><a href="#aboutPage">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact Info</h3>
+            <p>KSTVET Hotel</p>
+            <p>15204 Nairobi, Kenya</p>
+            <p>Phone: +254759411378</p>
+            <p>Email: kekibora@gmail.com</p>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Keki Bora Bakery. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <button id="backToTop" onclick="scrollToTop()">↑ Top</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

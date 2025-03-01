@@ -314,7 +314,11 @@ nav a:hover {
     font-size: 20px;
     font-weight: 700;
 }
-
+.about-main h2 {
+    color: #8B0000;
+    text-align: center;
+    font-size: 40px;
+}
 #order h2 {
     
     color: #8B0000;
@@ -451,6 +455,82 @@ footer {
     color: #333;
 }
 
+
+footer {
+    background-color: #80776d; /* Light, warm background */
+    color: #fcf6f6; /* Dark text for readability */
+    padding: 40px 0;
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+}
+
+.footer-column {
+    flex: 1 1 250px; /* Flex basis for responsiveness */
+    margin: 20px 15px;
+}
+
+.footer-column h3 {
+    color: #c2996d; /* Warm, earthy accent color */
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.footer-column p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.social-icons img {
+    width: 35px; /* Slightly larger icons */
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #e0d0c0; /* Lighter divider */
+    color: #666;
+}
+
+/* Styling Unordered Lists */
+.footer-column ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #333; /* Dark link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-column ul li a:hover {
+    color: #c2996d; /* Accent color on hover */
+}
+
+
 /* Responsive Design (Example) */
 @media (max-width: 768px) {
     .nav-links {
@@ -526,5 +606,24 @@ footer {
 
     .menu-item {
         width: 45%; /* Two items per row on smaller screens */
+    }
+
+    #orderPage .order-content ol {
+        padding-left: 20px; /* Adjust indentation as needed */
+    }
+
+    #orderPage .order-content li {
+        font-size: 16px; /* Adjust font size as needed */
+        margin-bottom: 10px; /* Add space between list items */
+    }
+
+    .hero-image {
+        display: none; /* Hide the hero image on mobile */
+    }
+
+    .hero-text {
+        width: 100%; /* Ensure the text takes full width */
+        padding: 20px; /* Add some padding for better spacing */
+        margin-bottom: 20px;
     }
 }

@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keki Bora Bakery - Order Online</title>
+    <title>Keki Bora Bakery - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <script src="script.js" defer></script> </head>
 <body>
     <header>
         <nav>
             <div class="logo">Keki Bora Bakery</div>
             <ul class="nav-links">
                 <li><a href="home.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="#menu.html">Menu</a></li>
+                <li><a href="#aboutus.html">About Us</a></li>
                 <li><a href="orderonline.html">Order Online</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
@@ -24,14 +24,24 @@
             <div class="close-icon" onclick="toggleMenu()">×</div>
         </nav>
     </header>
-    <main>
+
+    <main id="orderPage">
         <section id="order">
             <h2>Order Online</h2>
             <div class="order-content">
-                <p>Ready to satisfy your sweet cravings?  Ordering online is easy!  Click the button below to start your order.</p>
-
-                    <button class="orderBtn" onclick="window.location.href='https://glovoapp.com/ke/'">Order Now</button>
-
+                <p>Ready to satisfy your sweet cravings? Follow these simple steps to place your online order:</p>
+    
+                <ol>
+                    <li><strong>Click the "Order Now" Button:</strong> This will take you directly to our Keki Bora Bakery page on Glovo.</li>
+                    <li><strong>Browse Our Menu:</strong> Explore our wide selection of cakes, cupcakes, pastries, and other delicious treats.</li>
+                    <li><strong>Review Your Order:</strong> Double-check your cart to ensure everything is correct.</li>
+                    <li><strong>Enter Your Delivery Details:</strong> Provide your delivery address and contact information.</li>
+                    <li><strong>Choose Your Payment Method:</strong> Select your preferred payment option from the available choices on Glovo.</li>
+                    <li><strong>Place Your Order:</strong> Confirm your order and await delivery!</li>
+                </ol>
+    
+                <button class="orderBtn" onclick="window.location.href='https://glovoapp.com/ke/'">Order Now</button>
+    
                 <p>Or, if you prefer, you can call us at <b>📞+254783395764</b> to place your order.</p>
             </div>
         </section>
